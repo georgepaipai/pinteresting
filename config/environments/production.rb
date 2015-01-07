@@ -79,4 +79,14 @@ Rails.application.configure do
  # Required for Heroku
  # Note to set this to your actual host
  config.action_mailer.default_url_options = { host: 'gp-pinteresting.herokuapp.com', port: 3000 }
+
+  # Sets paperclip to upload images to AWS
+  config.paperclip_defaults = {
+  :storage => :s3,
+  :s3_credentials => {
+    :bucket => ENV['pinterestinggp'],
+    :access_key_id => ENV['AKIAILGO544K4Q4YYIBQ'],
+    :secret_access_key => ENV['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']
+  }
+}
 end
