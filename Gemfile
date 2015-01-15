@@ -13,7 +13,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'bootstrap-sass'
 gem 'devise'
 gem 'paperclip', github: 'thoughtbot/paperclip'
-gem 'aws-sdk', '~> 1.20.0'
+gem 'aws-sdk-v1' 
 
 group :development, :test do 
 	gem 'sqlite3'
